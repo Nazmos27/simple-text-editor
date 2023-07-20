@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Editor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <main class="bg-[url('./images/bgtexteditor.jpg')] bg-no-repeat bg-cover mx-auto my-10 h-[500px] w-3/4 border-black border-2">
+        <div>
+            <ul class="flex space-x-4 pl-10 pt-6">
+                <li>
+
+                    <img id="normal-btn" data-tooltip-target="tooltip-default-01" src="./images/letter-n.png" alt=""
+                        class="h-8 w-8">
+                    <div id="tooltip-default-01" role="tooltip"
+                        class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                        Normal
+                        <div class="tooltip-arrow" data-popper-arrow></div>
+                    </div>
+
+                </li>
+                <li>
+                    <img id="bold-btn" data-tooltip-target="tooltip-default-02" src="./images/bold-button.png" alt=""
+                        class="h-8 w-8">
+                    <div id="tooltip-default-02" role="tooltip"
+                        class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                        Bold
+                        <div class="tooltip-arrow" data-popper-arrow></div>
+                    </div>
+                </li>
+                <li>
+                    <img id="italic-btn" data-tooltip-target="tooltip-default-03" src="./images/italic-button.png"
+                        alt="" class="h-8 w-8">
+                    <div id="tooltip-default-03" role="tooltip"
+                        class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                        Italic
+                        <div class="tooltip-arrow" data-popper-arrow></div>
+                    </div>
+                </li>
+                <li>
+                    <input data-tooltip-target="tooltip-default-04" type="color" name="" id="color-value">
+                    <div id="tooltip-default-04" role="tooltip"
+                        class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                        Choose Color
+                        <div class="tooltip-arrow" data-popper-arrow></div>
+                    </div>
+                </li>
+                <li class="pl-32">
+                    <img id="left-align" src="./images/left-align.png" alt="" class="h-8 w-8" data-tooltip-target="tooltip-default-05">
+                    <div id="tooltip-default-05" role="tooltip"
+                        class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                        Left-Alignment
+                        <div class="tooltip-arrow" data-popper-arrow></div>
+                    </div>
+                </li>
+                <li>
+                    <img id="center-align" src="./images/center-align.png" alt="" class="h-8 w-8" data-tooltip-target="tooltip-default-06">
+                    <div id="tooltip-default-06" role="tooltip"
+                        class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                        Center-Alignment
+                        <div class="tooltip-arrow" data-popper-arrow></div>
+                    </div>
+                </li>
+                <li>
+                    <img id="right-align" src="./images/right-align.png" alt="" class="h-8 w-8" data-tooltip-target="tooltip-default-07">
+                    <div id="tooltip-default-07" role="tooltip"
+                        class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                        Right-Allignment
+                        <div class="tooltip-arrow" data-popper-arrow></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <textarea class="h-[350px] w-11/12 mx-auto block mt-10 text-2xl" name="text" id="text-area" cols="30"
+                rows="10"></textarea>
+        </div>
+    </main>
+    <script src="./style.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
+
+</body>
+
+</html>
